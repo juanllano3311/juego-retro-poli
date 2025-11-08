@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.palabraventura.controller.StartController"
+           style="-fx-background-image: url('@com/palabraventura/images/fondo.jpg');
+                  -fx-background-size: cover;
+                  -fx-background-repeat: no-repeat;">
+
+    <VBox alignment="CENTER" spacing="20">
+        <padding>
+            <Insets bottom="20" left="20" right="20" top="20" />
+        </padding>
+
+        <Button onAction="#handlePlay" prefWidth="200" text="Jugar" />
+        <Button onAction="#handleInstructions" prefWidth="200" text="Instrucciones" />
+        <Button onAction="#handleExit" prefWidth="200" text="Salir" />
+    </VBox>
+
+</StackPane>
